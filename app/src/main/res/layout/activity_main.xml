@@ -25,12 +25,12 @@
 
         <RadioButton
             android:id="@+id/square_radioButton"
-            android:textAlignment="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:button="@null"
-            android:text="@string/button_square_radio" />
+            android:text="@string/button_square_radio"
+            android:textAlignment="center" />
 
         <RadioButton
             android:id="@+id/post_management_radioButton"
@@ -40,21 +40,24 @@
             android:layout_weight="1"
             android:button="@null"
             android:text="@string/button_post_radio" />
-        <RadioButton
+
+        <ImageButton
             android:id="@+id/create_new_post_RadioButton"
-            android:textAlignment="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="10dp"
+            android:layout_height="20dp"
             android:layout_weight="1"
-            android:button="@null"/>
+            android:button="@null"
+            android:src="@drawable/a"
+            android:textAlignment="center" />
+
         <RadioButton
             android:id="@+id/message_radioButton"
-            android:textAlignment="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:button="@null"
-            android:text="@string/button_message_radio" />
+            android:text="@string/button_message_radio"
+            android:textAlignment="center" />
         <RadioButton
             android:id="@+id/mine_radioButton"
             android:textAlignment="center"

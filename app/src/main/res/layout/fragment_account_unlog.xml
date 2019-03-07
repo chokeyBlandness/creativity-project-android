@@ -7,7 +7,7 @@
 
     <TextView
         android:id="@+id/login_hint_textView"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:text="@string/text_login_hint"
         android:textSize="40sp"
@@ -16,20 +16,20 @@
 
     <Button
         android:id="@+id/trans_login_button"
-        android:layout_width="wrap_content"
+        android:layout_width="292dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="80dp"
-        android:text="@string/trans_activity_login"
-        android:layout_marginStart="40dp" />
+        android:text="@string/trans_activity_login" />
 
     <Button
         android:id="@+id/trans_register_button"
-        android:layout_width="wrap_content"
+        android:layout_width="298dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="160dp"
-        android:text="@string/trans_activity_register"
-        android:layout_marginStart="40dp" />
+        android:text="@string/trans_activity_register" />
 
 </FrameLayout>

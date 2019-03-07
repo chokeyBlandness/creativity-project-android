@@ -5,35 +5,32 @@
     android:layout_height="match_parent"
     tools:context=".fragments.AccountFragment">
 
-
-    <Button
-        android:id="@+id/logout_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/action_logout" />
-
-    <Button
-        android:id="@+id/change_user_info_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_change_user_info"
-        android:layout_marginLeft="100dp"
-        android:layout_marginStart="100dp" />
-
     <Button
         android:id="@+id/clockIn_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:text="@string/button_clockIn" />
 
     <Button
         android:id="@+id/mine_collections_button"
-        android:layout_width="108dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:text="@string/button_mine_collections" />
+    <Button
+        android:id="@+id/change_user_info_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/button_change_user_info" />
+
+
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_logout"
+        android:layout_marginTop="150dp"/>
 
 </FrameLayout>
