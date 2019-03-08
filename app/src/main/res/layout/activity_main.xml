@@ -41,13 +41,13 @@
             android:button="@null"
             android:text="@string/button_post_radio" />
 
-        <ImageButton
+        <RadioButton
             android:id="@+id/create_new_post_RadioButton"
             android:layout_width="10dp"
             android:layout_height="20dp"
             android:layout_weight="1"
             android:button="@null"
-            android:src="@drawable/a"
+            android:background="@drawable/a"
             android:textAlignment="center" />
 
         <RadioButton
