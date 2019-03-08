@@ -20,29 +20,32 @@
     <EditText
         android:id="@+id/newPost_title_editView"
         android:layout_width="248dp"
-        android:layout_height="34dp"
+        android:layout_height="60dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:inputType="text"
         android:maxLength="20"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/newPost_content_editView"
-        android:inputType="text"
         android:layout_width="302dp"
         android:layout_height="240dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="36dp"
         android:background="@color/colorDeepWhite"
-        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
         android:maxLines="8"
+        android:scrollbars="vertical"
+        android:gravity="top"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/newPost_title_editView" />
 </android.support.constraint.ConstraintLayout>
