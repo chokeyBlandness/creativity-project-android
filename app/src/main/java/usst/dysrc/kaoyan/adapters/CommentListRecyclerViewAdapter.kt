@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import usst.dysrc.kaoyan.R
 import usst.dysrc.kaoyan.entities.Comment
+import java.text.SimpleDateFormat
 
 class CommentListRecyclerViewAdapter(private val context: Context,private val commentList:List<Comment>)
     :RecyclerView.Adapter<CommentListRecyclerViewAdapter.CommentItemViewHolder>(){
@@ -16,7 +17,7 @@ class CommentListRecyclerViewAdapter(private val context: Context,private val co
     override fun onBindViewHolder(holder: CommentItemViewHolder, position: Int) {
         holder.userName_textView.text=commentList[position].userName
         holder.content_textView.text=commentList[position].content
-        holder.createDate_textView.text=commentList[position].createDate.toString()
+        holder.createDate_textView.text=SimpleDateFormat("yyyy-MM-dd").format(commentList[position].createDate)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CommentItemViewHolder {

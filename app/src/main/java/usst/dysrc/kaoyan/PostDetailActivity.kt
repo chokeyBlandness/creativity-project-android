@@ -29,7 +29,7 @@ class PostDetailActivity: AppCompatActivity(){
         if (postId!=(-1).toLong()){
             refreshPostDetail(postId,applicationData.userId)
             create_new_comment_action_button.setOnClickListener {
-                if (create_new_comment_editText.text==null||create_new_comment_editText.text.equals("")){
+                if (create_new_comment_editText.text==null||create_new_comment_editText.text.isEmpty()){
                     Toast.makeText(this,"不能为空",Toast.LENGTH_SHORT).show()
                 }else{
                     doAsync {
