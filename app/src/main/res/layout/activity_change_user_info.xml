@@ -55,16 +55,18 @@
         android:id="@+id/change_user_targetSchool_editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
         android:hint="@string/prompt_targetSchool"
         android:inputType="text"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="311dp" />
+        app:layout_constraintStart_toStartOf="@+id/change_user_targetProfession_editText"
+        app:layout_constraintTop_toBottomOf="@+id/change_user_targetProfession_editText" />
 
     <Button
         android:id="@+id/change_user_info_confirm_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
         android:text="@string/button_confirm"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="393dp" />
+        app:layout_constraintStart_toStartOf="@+id/change_user_targetSchool_editText"
+        app:layout_constraintTop_toBottomOf="@+id/change_user_targetSchool_editText" />
 </android.support.constraint.ConstraintLayout>

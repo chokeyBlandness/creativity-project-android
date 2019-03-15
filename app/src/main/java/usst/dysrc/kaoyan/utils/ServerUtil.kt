@@ -1,10 +1,10 @@
 package usst.dysrc.kaoyan.utils
 
 object ServerUtil{
-    const val SERVER_HOST_URL:String="http://106.14.141.108:8080/kaoyan"
+    const val SERVER_HOST_URL:String="http://192.168.1.109:8096/kaoyan"
     const val SERVER_USER_LOGIN_URL:String="/user/login"
     const val SERVER_USER_REGISTER_URL:String="/user/register"
-    const val SERVER_USER_CHANGE_USER_INFO_URL:String="/user/changeUserInfo"
+    const val SERVER_USER_CHANGE_USER_INFO_URL:String="/user/updateUserInfo"
     const val SERVER_USER_GET_CLOCKED_LIST:String="/user/getClockedList"
     const val SERVER_USER_CREATE_NEW_CLOCKED="/user/createNewClocked"
     const val SERVER_POST_CREATE_POST_URL:String="/post/createPost"

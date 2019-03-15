@@ -2,7 +2,7 @@
     <string name="app_name">一起考研吧</string>
     <string name="title_activity_login">登录</string>
     <string name="title_activity_register">注册</string>
-    <string name="title_activity_postDetail">订单详情</string>
+    <string name="title_activity_postDetail">帖子详情</string>
     <string name="title_activity_create_new_post">新建帖子</string>
     <string name="title_activity_clock_in">打卡</string>
     <string name="title_activity_mine_collectionList">收藏列表</string>

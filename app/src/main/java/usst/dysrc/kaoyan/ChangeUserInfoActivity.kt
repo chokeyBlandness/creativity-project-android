@@ -18,20 +18,27 @@ class ChangeUserInfoActivity: AppCompatActivity() {
         setContentView(R.layout.activity_change_user_info)
         var applicationData:ApplicationData=application as ApplicationData
         change_user_info_confirm_button.setOnClickListener { _ ->
-            doAsync {
-                var changingUser=User()
-                changingUser.userId=applicationData.userId
-                changingUser.userGender= if(change_user_male_radioButton.isChecked) 0 else 1
-                changingUser.targetProfession=change_user_targetProfession_editText.text.toString()
-                changingUser.targetSchool=change_user_targetSchool_editText.text.toString()
-                val changeUserInfoResponse=OKHTTPUtils.postData(
-                        ServerUtil.SERVER_HOST_URL + ServerUtil.SERVER_USER_CHANGE_USER_INFO_URL,
-                        JSON.toJSONString(changingUser))
-                uiThread {
-                    Toast.makeText(it,changeUserInfoResponse.body()!!.string(),Toast.LENGTH_SHORT).show()
-                    startActivity(Intent().setClass(it,MainActivity::class.java))
+
+            if (change_user_targetProfession_editText.text.isEmpty() ||
+                    change_user_targetSchool_editText.text.isEmpty()) {
+                Toast.makeText(this, "不能为空", Toast.LENGTH_SHORT).show()
+            } else {
+                doAsync {
+                    var changingUser=User()
+                    changingUser.userId=applicationData.userId
+                    changingUser.userGender= if(change_user_male_radioButton.isChecked) 0 else 1
+                    changingUser.targetProfession=change_user_targetProfession_editText.text.toString()
+                    changingUser.targetSchool=change_user_targetSchool_editText.text.toString()
+                    val changeUserInfoResponse=OKHTTPUtils.postData(
+                            ServerUtil.SERVER_HOST_URL + ServerUtil.SERVER_USER_CHANGE_USER_INFO_URL,
+                            JSON.toJSONString(changingUser))
+                    uiThread {
+                        Toast.makeText(it,changeUserInfoResponse.body()!!.string(),Toast.LENGTH_SHORT).show()
+                        startActivity(Intent().setClass(it,MainActivity::class.java))
+                    }
                 }
             }
+
         }
 
     }
