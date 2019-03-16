@@ -33,4 +33,58 @@
         android:text="@string/action_logout"
         android:layout_marginTop="150dp"/>
 
+    <TextView
+        android:id="@+id/show_userName_textView"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="@string/prompt_user_name"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/showing_userName_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/prompt_user_name"
+        android:textSize="25sp"
+        android:layout_marginStart="140dp" />
+
+    <TextView
+        android:id="@+id/show_targetSchool_textView"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="@string/prompt_targetSchool"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/showing_targetSchool_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="250dp"
+        android:text="@string/prompt_targetSchool"
+        android:textSize="25sp"
+        android:layout_marginStart="140dp" />
+
+    <TextView
+        android:id="@+id/show_targetProfession_textView"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="@string/prompt_targetProfession"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/showing_targetProfession_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="300dp"
+        android:text="@string/prompt_targetProfession"
+        android:textSize="25sp"
+        android:layout_marginStart="140dp" />
+
 </FrameLayout>

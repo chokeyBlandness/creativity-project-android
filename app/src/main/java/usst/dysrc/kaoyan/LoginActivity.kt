@@ -31,9 +31,14 @@ class LoginActivity : AppCompatActivity() {
                 uiThread {
                     if (!loginMessage.equals(ResultEnum.LOGIN_ERROR.message,false) &&
                             !loginMessage.equals(ResultEnum.LOGIN_PSW_ERROR.message,false)) {
-                        val applicationData:ApplicationData= application as ApplicationData
-                        applicationData.userId=loginMessage.toLong()
-//                        startActivity(Intent().setClass(it,MainActivity::class.java))
+//                        applicationData.userId=loginMessage.toLong()
+                        val userInfo = JSON.parseObject(loginMessage, User::class.java)
+                        val applicationData:ApplicationData=application as ApplicationData
+                        applicationData.userId= userInfo.userId!!
+                        applicationData.userName=userInfo.userName
+                        applicationData.userGender=userInfo.userGender
+                        applicationData.targetSchool=userInfo.targetSchool
+                        applicationData.targetProfession=userInfo.targetProfession
                         finish()
                         startActivity(Intent().setClass(it,MainActivity::class.java))
                     }else{

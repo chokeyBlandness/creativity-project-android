@@ -27,6 +27,9 @@ class AccountFragment: Fragment() {
         }else{
             //show logged fragment
             view=inflater.inflate(R.layout.fragment_account_logged,null)
+            view.showing_userName_textView.text=applicationData.userName
+            view.showing_targetSchool_textView.text=applicationData.targetSchool
+            view.showing_targetProfession_textView.text=applicationData.targetProfession
             view.logout_button.setOnClickListener {
                 applicationData.userId=(-1).toLong()
                 startActivity(Intent().setClass(activity,MainActivity::class.java))
