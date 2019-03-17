@@ -7,13 +7,13 @@
     android:layout_height="match_parent">
 
 
-    <ImageView
-        android:id="@+id/create_new_post_imageView"
-        android:layout_width="30dp"
-        android:layout_height="28dp"
-        app:srcCompat="@android:drawable/ic_notification_overlay"
-        tools:layout_editor_absoluteX="111dp"
-        tools:layout_editor_absoluteY="317dp" />
+    <!--<ImageView-->
+        <!--android:id="@+id/create_new_post_imageView"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="28dp"-->
+        <!--app:srcCompat="@android:drawable/ic_notification_overlay"-->
+        <!--tools:layout_editor_absoluteX="111dp"-->
+        <!--tools:layout_editor_absoluteY="317dp" />-->
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/mine_postList_recyclerView"

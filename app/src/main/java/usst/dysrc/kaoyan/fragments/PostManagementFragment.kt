@@ -25,13 +25,13 @@ class PostManagementFragment: Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_post_management, null)
         val applicationData= activity!!.application as ApplicationData
-        view.create_new_post_imageView.setOnClickListener {
-            if (applicationData.userId==(-1).toLong()){
-                startActivity(Intent().setClass(activity,LoginActivity::class.java))
-            }else{
-                startActivity(Intent().setClass(activity,CreateNewPost::class.java))
-            }
-        }
+//        view.create_new_post_imageView.setOnClickListener {
+//            if (applicationData.userId==(-1).toLong()){
+//                startActivity(Intent().setClass(activity,LoginActivity::class.java))
+//            }else{
+//                startActivity(Intent().setClass(activity,CreateNewPost::class.java))
+//            }
+//        }
         view.mine_postList_recyclerView.layoutManager=LinearLayoutManager(activity)
         doAsync {
             val response=OKHTTPUtils.getData(
